@@ -4,5 +4,5 @@ Simple Browser based library created using angular that contains a pdf reader to
 ## src.rar
 The rar file contains all the componets used along with some of the assets
 
-## book_details.json
+## book_JSON_data.json
 The Json file is used to populate the book list in the application
