@@ -1,0 +1,18 @@
+.footer{
+  background-color: #92d7ef;
+  padding: 20px 10px;
+  position: sticky;
+  top:100%;
+}
+
+
+a{
+  color:#000080;
+  text-decoration: none;
+  padding:0px 10px;
+  font-size: 17px;
+}
+
+a:hover{
+  color:#fff;
+}

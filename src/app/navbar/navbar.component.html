@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-lg navbar-light  ">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="home">WebBook</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav m-auto" >
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="home" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="MyLibrary" routerLinkActive="active-link">My Library</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="NewReleases" routerLinkActive="active-link">New Releases</a>
+        </li>
+        <li class = "nav-item">
+          <a class="nav-link" routerLink="ReaderComponent" routerLinkActive="active-link">PDF Reader</a>
+        </li>
+      </ul>
+      <input class="text-line" #wishlistitem id="wishitem" [value]="wish"> <button class="btn btn-light" (click)="add_to_wishlist(wishlistitem.value)">Add to Wishlist</button>
+
+    </div>
+  </div>
+</nav>

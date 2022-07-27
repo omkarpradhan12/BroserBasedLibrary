@@ -1,0 +1,107 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+
+<link rel="stylesheet" href="https://bootswatch.com/4/simplex/bootstrap.min.css"/>
+
+
+<div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+
+                    <div class="card-body">
+                        <div class="card-title mb-4">
+                            <div class="d-flex justify-content-start">
+                                <div class="image-container">
+                                    <img [src]='book_details.thumbnailUrl' style="width: 130px; height: 190px" class="img-thumbnail" alt="Image not found" onerror="this.src='../../assets/images/img_not_avail.png';"/>
+                                </div>
+                                <div class="userData ml-3">
+                                    <h2 class="d-block" style="font-size: 1.5rem; font-weight: bold">{{book_details.title}}</h2>
+                                    <p style="word-wrap: break-word; width: 500px;">{{book_details.shortDescription}}</p>
+                                </div>
+                                <div class="ml-auto">
+                                    <input type="button" class="btn btn-primary d-none" id="btnDiscard" value="Discard Changes" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="tab-content ml-1" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="basicInfo" role="tabpanel" aria-labelledby="basicInfo-tab">
+
+
+                                        <div class="row">
+                                            <div class="col-sm-3 col-md-2 col-5">
+                                                <label style="font-weight:bold; font-size:15px;">Authors : </label>
+                                            </div>
+                                            <div class="col-md-8 col-6 " style="font-size:15px;">
+                                                {{book_details.authors}}
+                                            </div>
+                                        </div>
+                                        <hr />
+
+                                        <div class="row">
+                                            <div class="col-sm-3 col-md-2 col-5">
+                                                <label style="font-weight:bold; font-size:15px;">Publishing Date : </label>
+                                            </div>
+                                            <div class="col-md-8 col-6" style="font-size:15px;">
+                                              {{book_details.publishedDate["$date"] |date}}
+                                            </div>
+                                        </div>
+                                        <hr />
+
+
+                                        <div class="row">
+                                            <div class="col-sm-3 col-md-2 col-5">
+                                                <label style="font-weight:bold; font-size:15px;" >Page Count : </label>
+                                            </div>
+                                            <div class="col-md-8 col-6" style="font-size:15px;">
+                                              {{book_details.pageCount}}
+                                            </div>
+                                        </div>
+                                        <hr />
+                                        <div class="row">
+                                            <div class="col-sm-3 col-md-2 col-5">
+                                                <label style="font-weight:bold; font-size:15px;">Categories : </label>
+                                            </div>
+                                            <div class="col-md-8 col-6" style="font-size:15px;">
+                                              {{book_details.categories}}
+                                            </div>
+                                        </div>
+                                        <hr />
+                                        <div class="row">
+                                            <div class="col-sm-3 col-md-2 col-5">
+                                                <label style="font-weight:bold; font-size:15px;">Summary :</label>
+                                            </div>
+                                            <div class="col-md-8 col-6" style="font-size:15px;">
+                                              {{book_details.longDescription}}
+                                            </div>
+                                        </div>
+                                        <hr />
+                                        <div class="row">
+                                            <div class="col-sm-3 col-md-2 col-5">
+                                                <label style="font-weight:bold; font-size:15px;">Actions :</label>
+                                            </div>
+                                            <div class="col-md-8 col-6">
+                                              <button routerLink="/ReaderComponent" class="btn1">Read Book</button>
+                                              <button routerLink="/MyLibrary" class="btn2">Take me Back</button>
+                                            </div>
+                                        </div>
+                                        <hr />
+
+                                    </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>

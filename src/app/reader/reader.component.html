@@ -1,0 +1,30 @@
+
+
+<div class="row">
+
+
+
+<div class="column w30" >
+  <h1>Supported Books</h1>
+  <div class="row card-deck custom-scrollbar" style="overflow-y:scroll ; height:700px" >
+<div class="container" *ngFor="let bbok of supported_books" (click)="selected(bbok.name,bbok.src)" style="overflow:hidden">
+  <div class="card" style="width: 10rem;" >
+    <div class="image">
+    <img [src]='bbok.img' class="card-img-top" alt="Image not found" onerror="this.src='../../assets/images/img_not_avail.png';">
+    </div>
+    <div class="content">
+     <p [innerText]="bbok.name"></p>
+
+    </div>
+  </div>
+</div>
+   </div>
+</div>
+<div class="column readbod w70">
+  <h1>{{bname}}</h1>
+  <pdf-viewer [src]="sfile"
+  [render-text]="true"
+  [original-size]="false"
+  style="width: auto; height: 90%;"></pdf-viewer>
+</div>
+</div>

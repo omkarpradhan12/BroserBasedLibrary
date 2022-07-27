@@ -1,0 +1,51 @@
+img{
+  background-repeat: no-repeat;
+  height:100%;
+  width: 100%;
+  background-position: contain;
+  background-size: contain;
+  background-color:aquamarine;
+  padding: 0;
+}
+
+.row{
+  /*height:calc(100vh-105.5px);*/
+  height:550px;
+
+}
+
+.head1{
+
+  padding-top:6%;
+  background-color: #a2eae0  ;
+
+}
+
+.head2{
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.3;
+  font-weight: 800;
+  font-size: 3rem;
+  padding-left: 18%;
+  padding-right: 10%;
+  color: #0f7e9b;
+}
+
+.head3{
+    background-color: #a2eae0  ;
+}
+.download-button{
+  margin-left:18%;
+  margin-right:4%;
+  margin-top: 5%;
+}
+
+.download-button1{
+  margin-top: 5%;
+  background-color:#0f7e9b ;
+}
+
+.download-button:hover{
+  color:#0f7e9b;
+}
+

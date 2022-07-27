@@ -1,0 +1,46 @@
+.navbar-light .navbar-nav .nav-link{
+  color: #000080;
+
+  font-size: 600;
+}
+
+.navbar-light .navbar-nav .nav-link.active-link{
+color:#0f7e9b ;
+font-weight: bold;
+}
+
+.navbar{
+  background-color:#92d7ef;
+}
+
+.navbar-brand{
+  margin-left:9%;
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  color: #0f7e9b;
+
+}
+
+.btn{
+background-color: #fff;
+color:#0f7e9b;
+}
+
+.btn:hover{
+  background-color: #0f7e9b;
+  color: #fff;
+  }
+
+  .text-line {
+    background-color: transparent;
+    color: #fff;
+    outline: none;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #fff 1px;
+    padding: 3px 10px;
+    width: 200px;
+
+  }

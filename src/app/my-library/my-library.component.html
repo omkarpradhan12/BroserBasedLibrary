@@ -1,0 +1,36 @@
+
+<div class="row">
+  <div class="col-md-3 genre">
+  <h4>Categories</h4>
+  <div *ngFor="let ele of genres">
+  <ul class="div1" (click)="set_cat(ele)" style="list-style-type:none;">
+   <li> {{ele}} </li>
+  </ul>
+  </div>
+  </div>
+  <div class="col-md-7 pages" >
+    <h1>{{genre}}</h1><hr />
+    <div class="row card-deck custom-scrollbar" style="overflow-y:scroll ; height:auto" >
+
+  <div class="container" *ngFor="let bbok of filtered_bd" (click)="clicked(bbok)" style="overflow:hidden">
+    <div class="card" style="width: 10rem;" >
+      <div class="image">
+      <img [src]='bbok.thumbnailUrl' class="card-img-top" alt="Image not found" onerror="this.src='../../assets/images/img_not_avail.png';">
+      </div>
+      <div class="content">
+       <p [innerText]="bbok.title"></p>
+
+      </div>
+    </div>
+  </div>
+     </div>
+  </div>
+  <div class="col-md-2 fav">
+  <div  >
+    <h4 class="underline">WISHLIST</h4>
+  <div *ngFor="let x of s">
+    <h5 class="wishlist_item">{{x}}</h5>
+  </div>
+  </div>
+  </div>
+  </div>
